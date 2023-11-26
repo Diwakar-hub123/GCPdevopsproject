@@ -11,4 +11,3 @@ steps:
     - '--location=us-central1-c'
     - '--cluster=gcpdevopscluster'
     - '--namespace=gcp-devops-prod'
-    - '--verbosity=debug'
