@@ -9,5 +9,5 @@ steps:
     - '--filename=gke.yaml'
     - '--image=gcr.io/$PROJECT_ID/gcpdevops:latest'
     - '--location=us-central1-c'
-    - '--cluster=gcpdevopscluster'
+    - '--cluster=autopilot-cluster-1'
     - '--namespace=gcp-devops-prod'
