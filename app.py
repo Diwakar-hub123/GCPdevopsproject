@@ -3,4 +3,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-  return 'Hello, Simple Flask application I am done with deployment'
+  return 'Hello, Simple Flask application checking with the deployment'
