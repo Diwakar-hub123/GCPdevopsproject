@@ -6,7 +6,7 @@ steps:
      - 'pip install virtualenv && virtualenv /workspace/venv'
      - '--user'
 
- - name: 'gcr.io/cloud-builders/docker'
+ - name: 'docker'
    entrypoint: 'bin/bash'
    args: ['-c', 'echo Username=$$MY_SEC']
    secretEnv: ['MY_SEC']
