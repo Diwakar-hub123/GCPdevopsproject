@@ -1,6 +1,14 @@
 steps:
+ - name: python
+   entrypoint: '/bin/bash'
+   args: 
+     - '-c'
+     - 'pip install virtualenv && virtualenv /workspace/venv'
+     - '--user'
+     
  - name: 'gcr.io/cloud-builders/docker'
    args: ['build', '-t' ,'us-central1-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REGISTRY_REPO}/${_IMAGE_NAME}', '.']
+
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REGISTRY_REPO}/${_IMAGE_NAME}']
 
