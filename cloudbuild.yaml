@@ -8,7 +8,7 @@ steps:
 
  - name: 'gcr.io/cloud-builders/docker'
    entrypoint: 'bin/bash'
-   args: ['-c', 'echo Username=$$MY_SEC]
+   args: ['-c', 'echo Username=$$MY_SEC']
    secretEnv: ['MY_SEC']
       
  - name: 'gcr.io/cloud-builders/docker'
