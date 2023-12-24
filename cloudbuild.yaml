@@ -17,6 +17,10 @@ steps:
  - name: 'gcr.io/cloud-builders/docker'
    args: ['build', '-t' ,'us-central1-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REGISTRY_REPO}/twistcli', '-f', 'twistcli/Dockerfile', '.']
 
+ - name: 'us-central1-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REGISTRY_REPO}/twistcli'
+   args: ['twistcli/twistcli.sh']
+   secretEnv: ['MY_SEC']
+
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REGISTRY_REPO}/${_IMAGE_NAME}']
 
