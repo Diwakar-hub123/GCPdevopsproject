@@ -1,1 +1,1 @@
-echo Username=$$MY_SEC
+echo Username=$MY_SEC
