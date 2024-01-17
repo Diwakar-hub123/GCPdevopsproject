@@ -29,7 +29,7 @@ substitutions:
    _IMAGE_NAME: gcpdevops
 options:
    substitution_option: 'ALLOW_LOOSE'
-    logging: CLOUD_LOGGING_ONLY
+   logging: CLOUD_LOGGING_ONLY
 
 availableSecrets:
   secretManager:
